@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=IOTA (MIOTA)
+Exec=/bin/bash -c "/usr/lib/firefox-esr/firefox-esr --private-window /home/vinktar/.local/share/vinktar/IOTA-Paper-Wallet/index.html & /usr/bin/xfce4-terminal --command='/home/vinktar/.local/share/vinktar/iota-seeds.sh' -H --geometry 85x24"
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/vinktar/.local/share/icons/vinktar/64x64/apps/iotapaperwallet.png
+Comment=
+Categories=PaperWallets;
+StartupNotify=true

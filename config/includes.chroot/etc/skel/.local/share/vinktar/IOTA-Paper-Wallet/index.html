@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>IOTA Paper Wallet</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="images">
+            <canvas width="1600px" height="540px" id="imageCanvas"></canvas>
+            <canvas hidden id="seedCanvas"></canvas>
+            <canvas hidden id="addressCanvas"></canvas>
+        </div>
+        <span id="copy">_</span>
+        <div id="controls">
+            <input id="seed" type="text" placeholder="ENTER SEED" maxlength="81">
+            <div id="buttons">
+                <input id="generate" class="button" type="button" value="CREATE">
+                <input id="print" class="button" type="button" value="PRINT">
+            </div>
+            <p id="validMessage"></p>
+        </div>
+    </div>
+
+    <div id="infoContainer">
+        <br>
+        <div class="tooltip"><span onclick="expandInfo()" id="infoTip"><img id="info" src="img/info.png"></span>
+            <div class="tooltiptext" id="tooltiptext">
+                <ul>
+                    <li>This website generates a paper wallet, ready for printing and storage.</li>
+                    <li>Use the option buttons on the top left to control the output of the paper wallet generator</li>
+                    <li>Only use the advanced options if you are an advanced user!</li>
+                    <li>All content on this site is locally hosted, and relies on only two dependencies</li>
+                    <ul>
+                        <li><a href="https://github.com/neocotic/qrious">Qrious</a> for QR code generation</li>
+                        <li><a href="https://github.com/iotaledger/iota.lib.js">iota js lib</a></li>
+                    </ul>
+                    <li>This website can (and preferably should be) run offline from the internet.</li>
+                    <li>Whilst every effort has been made for the accuracy of this tool, I am in no way responsible for any damages or loss of funds should any errors exist.</li>
+                </ul>
+                <span id="donations">Buy me a beer! OLADVFKDCTEEPBBXYBXYICNJEHWGOXDXXKINNUWPQUGNWZNXFACNRBSZRDDZWZPTANFAYITUJEAJFKS9WDCYCBI9VW</span>
+
+            </div>
+        </div>
+    </div>
+    <div id="versions">
+        <h4 id="optionsBtn" onclick="expandOptions()">Options</h4>
+        <div id="options">
+            <label>Styles</label><br>
+            <input id="default" class="button sml button-active" type="button" onclick="setMode('default')" value="Default"><br>
+            <input id="address" class="button sml" type="button" onclick="setMode('address')" value="Address Only"><br>
+            <input id="noQR" class="button sml" type="button" onclick="setMode('noQR')" value="No QR codes"><br>
+            <input id="discreet" class="button sml" type="button" onclick="setMode('discreet')" value="Discreet"><br>
+            <h4 id="advancedBtn" onclick="expandAdvanced()">Advanced!</h4>
+            <div id="advanced">
+                <label>Enter Index</label><br>
+                <input id="index-num" type="text" value="0" onkeyup="this.value=this.value.replace(/[^\d]/,'')"><br>
+                <label>Enter Security</label><br>
+                <input id="security-level" type="text" value="2" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
+            </div>
+        </div>
+
+    </div>
+
+    <a id="seed-help" href="https://matthewwinstonjohnson.gitbooks.io/iota-guide-and-faq/getting-started/dl-wallet/what-is-my-seed.html">How to generate a secure seed</a>
+    <a id="download" href="out/offline-build.zip" download>Download an offline version of this tool</a>
+    <a id="attr" href="https://github.com/arancauchi/IOTA-Paper-Wallet/blob/master/LICENSE">This tool is covered under an MIT license</a>
+    <a id="ver" href="https://github.com/arancauchi/IOTA-Paper-Wallet">v1.4</a>
+
+    <script src="dist/qrious.min.js"></script>
+    <script src="dist/iota.js"></script>
+    <script src="dist/main.bundle.js"></script>
+</body>
+
+</html>

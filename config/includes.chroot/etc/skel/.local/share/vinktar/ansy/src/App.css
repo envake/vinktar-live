@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url("./bg.png");
+  background-repeat: repeat;
+}
+
+.flex.column {
+flex-direction: column;
+}
+
+
+.App {
+  display: flex;
+  min-height: 86vh;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#root {
+  height: 100%;
+}
+
+#splash {
+  text-align: center;
+  flex:none;
+}
+
+#print-foot {
+  flex:none;
+  min-height: 20%
+}
+
+
+@media print {
+  .wallet-page {
+    width: 210mm;
+    page-break-after: always;
+  }
+  .ribbon {display:none}
+  #splash {display:none}
+  #form {display: none}
+  #print-foot {display: none}
+  #foot {display: none}
+  .no-print{display: none}
+}

@@ -1,0 +1,12 @@
+live-boot
+live-config
+live-config-systemd
+dbus
+policykit-1
+mesa-utils
+live-tools
+rsync
+uuid-runtime
+keyboard-configuration
+locales
+user-setup

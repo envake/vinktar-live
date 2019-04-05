@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Litecoin (LTC)
+Exec=/usr/lib/firefox-esr/firefox-esr --private-window /home/vinktar/.local/share/vinktar/liteaddress.org/index.html
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/vinktar/.local/share/icons/vinktar/64x64/apps/liteaddress.org.png
+Comment=Open Source JavaScript Client-Side Litecoin Wallet Generator
+Categories=PaperWallets;
+StartupNotify=true

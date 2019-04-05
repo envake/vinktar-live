@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+	--architectures i386 \
+	--linux-flavours 686 \
+	--distribution buster \
+	--parent-distribution buster \
+	--parent-debian-installer-distribution buster \
+	--ignore-system-defaults \
+	--apt-indices false \
+	--apt-recommends false \
+	--initsystem systemd \
+	--iso-application "Vinktar Live" \
+	--iso-publisher "L. Johns; ljohns.vinktar@mail.de" \
+	--iso-volume "vinktar-live" \
+	--debian-installer false \
+	--memtest memtest86+ \
+	--mode debian \
+	--system live \
+	--bootappend-live "boot=live components hostname=vinktar-live username=vinktar noroot nonetworking" \
+	--bootappend-live-failsafe "boot=live components username=vinktar hostname=vinktar-live memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal noroot nonetworking" \
+	--quiet \
+	--updates false \
+	--backports false \
+	--source false \
+	--archive-areas main \
+	--firmware-binary true \
+	--firmware-chroot true \
+	--win32-loader false \
+	--clean \
+ 	"${@}"

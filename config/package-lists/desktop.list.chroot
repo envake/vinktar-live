@@ -1,0 +1,11 @@
+task-xfce-desktop
+
+gnome-themes-standard
+gtk2-engines-pixbuf
+arc-theme
+numix-icon-theme
+
+xfce4-power-manager
+xfce4-terminal
+xfce4-taskmanager
+mousepad

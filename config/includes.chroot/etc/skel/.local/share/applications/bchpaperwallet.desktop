@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Bitcoin Cash (BCH)
+Exec=/usr/lib/firefox-esr/firefox-esr --private-window /home/vinktar/.local/share/vinktar/paperwallet.bitcoin.com/cashwallet.html
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/vinktar/.local/share/icons/vinktar/64x64/apps/bchpaperwallet.png
+Comment=A client-side Bitcoin Cash (BCH) wallet generator producing customizable paper wallets.
+Categories=PaperWallets;
+StartupNotify=true

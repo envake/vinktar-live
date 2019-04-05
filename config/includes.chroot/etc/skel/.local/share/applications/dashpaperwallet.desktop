@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Dash (DASH)
+Exec=/usr/lib/firefox-esr/firefox-esr --private-window /home/vinktar/.local/share/vinktar/paper.dash.org/paper.dash.org.html
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/vinktar/.local/share/icons/vinktar/64x64/apps/dashpaperwallet.png
+Comment=
+Categories=PaperWallets;
+StartupNotify=true

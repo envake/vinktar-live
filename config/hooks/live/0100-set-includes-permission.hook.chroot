@@ -1,0 +1,11 @@
+#!/bin/sh
+
+## This script sets the correct permissions of a few chroot includeds.
+## Vinktar | Open Source Paper Wallet Toolkit 2019
+## ljohns.vinktar@mail.de
+
+set -e
+
+chmod 644 /usr/share/themes/Adwaita/gtk-2.0/gtkrc
+chmod 644 /usr/share/themes/Adwaita/gtk-2.0/panel.rc
+chmod 644 /etc/default/networking

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+## This script prevents the autostart of light-locker.
+## Vinktar | Open Source Paper Wallet Toolkit 2019
+## ljohns.vinktar@mail.de
+
+set -e
+
+rm /etc/xdg/autostart/light-locker.desktop
+rm /etc/xdg/autostart/xscreensaver.desktop

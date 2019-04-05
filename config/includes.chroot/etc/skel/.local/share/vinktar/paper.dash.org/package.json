@@ -1,0 +1,36 @@
+{
+  "name": "paper.dash.org",
+  "version": "3.4.0-dash",
+  "sha256sum": "4f5254b4a6791c8d277bed6ea3d7928e1721a8068dffda9441b5c6bb4bfb7006",
+  "description": "Open Source JavaScript Client-Side Dash Wallet Generator",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-combine": "~0.8.3",
+    "grunt-encode-asset-base64": "0.0.3",
+    "grunt-lineending": "~0.2.4"
+  },
+  "scripts": {
+    "build": "grunt",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dashpay/paper.dash.org"
+  },
+  "keywords": [
+    "dash address wallet generator"
+  ],
+  "author": "dash",
+  "contributors": [
+    {
+      "name": "pointbiz"
+    }
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/dashpay/paper.dash.org/issues"
+  }
+}

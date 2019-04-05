@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Stellar (XLM)
+Exec=/usr/lib/firefox-esr/firefox-esr --private-window /home/vinktar/.local/share/vinktar/stellar-paper-wallet/index.html
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/vinktar/.local/share/icons/vinktar/64x64/apps/stellarpaperwallet.png
+Comment=
+Categories=PaperWallets;
+StartupNotify=true

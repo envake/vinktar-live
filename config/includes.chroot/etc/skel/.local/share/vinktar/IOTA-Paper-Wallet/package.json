@@ -1,0 +1,40 @@
+{
+  "name": "iota-paper-wallet",
+  "version": "1.3.1",
+  "description": "A paper wallet generation tool for the IOTA cryptocurrency",
+  "main": "index.js",
+  "devDependencies": {
+    "archiver": "latest",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.2.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "require": "latest"
+  },
+  "scripts": {
+    "build": "babel --presets es2015 js/main.js -o dist/main.bundle.js; node ./build/build.js",
+    "babel": "babel --presets es2015 js/main.js -o dist/main.bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arancauchi/IOTA-Paper-Wallet.git"
+  },
+  "keywords": [
+    "IOTA",
+    "Paper",
+    "Wallet"
+  ],
+  "author": "Aran Cauchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arancauchi/IOTA-Paper-Wallet/issues"
+  },
+  "homepage": "https://github.com/arancauchi/IOTA-Paper-Wallet#readme",
+  "dependencies": {
+    "hasha": "^3.0.0",
+    "write": "^1.0.3"
+  }
+}

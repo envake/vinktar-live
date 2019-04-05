@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=TRON (TRX)
+Exec=/usr/lib/firefox-esr/firefox-esr --private-window /home/vinktar/.local/share/vinktar/tronpaperwallet.org/index.html
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/vinktar/.local/share/icons/vinktar/64x64/apps/tronpaperwallet.png
+Comment=
+Categories=PaperWallets;
+StartupNotify=true

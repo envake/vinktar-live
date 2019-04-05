@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Bitcoin (BTC)
+Exec=/usr/lib/firefox-esr/firefox-esr --private-window /home/vinktar/.local/share/vinktar/bitaddress.org/bitaddress.org.html
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/vinktar/.local/share/icons/vinktar/64x64/apps/bitaddress.org.png
+Comment=Open Source JavaScript Client-Side Bitcoin Wallet Generator
+Categories=PaperWallets;
+StartupNotify=true

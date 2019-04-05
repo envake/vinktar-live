@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Ripple (XRP)
+Exec=/usr/lib/firefox-esr/firefox-esr --private-window /home/vinktar/.local/share/vinktar/qrcash-paper-wallet/coldwallet.html
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/vinktar/.local/share/icons/vinktar/64x64/apps/ripplypaperwallet.png
+Comment=Ripple paper wallet generator. Store your XRP securely in a cold wallet.
+Categories=PaperWallets;
+StartupNotify=true
+

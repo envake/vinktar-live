@@ -1,0 +1,22 @@
+style "panel-button" {
+
+    xthickness = 3
+    ythickness = 0
+  
+    bg[NORMAL]        = shade (1.04, @bg_color)
+    bg[PRELIGHT]      = shade (1.06, @bg_color)
+    bg[ACTIVE]          = shade (0.85, @bg_color)
+
+}
+
+widget "*PanelWidget*"		style "panel-button"
+widget "*PanelApplet*"		style "panel-button"
+class "PanelApp*"		        style "panel-button"
+class "PanelToplevel*"		style "panel-button"
+widget_class "*PanelToplevel*"	style "panel-button"
+widget_class "*notif*"		        style "panel-button"
+widget_class "*Notif*"		        style "panel-button"
+widget_class "*Tray*"		        style "panel-button" 
+widget_class "*tray*"		        style "panel-button"
+widget "*Xfce*Panel*"		        style "panel-button"
+class "*Xfce*Panel*"	                style "panel-button"
