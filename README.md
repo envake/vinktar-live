@@ -28,6 +28,8 @@ lb config
 lb build
 ```
 
+## Participate
+I created this project as part of my bachelor thesis. Feel free to fork, improve, review or share my work.
 
 ## Copyrights and Licenses
 
